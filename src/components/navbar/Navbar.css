@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  list-style-type: none;
+  height: 5rem;
+  background-color: #242424;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.87);
+}
+
+li {
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.login-link {
+  color: rgba(255, 255, 255, 0.87);
+  font-weight: 100;
+  font-size: 2rem;
+  background-color: #242424;
+  border: 0.5px solid rgba(255, 255, 255, 0.87);
+  padding: 5px 20px;
+  text-decoration: none;
+}
