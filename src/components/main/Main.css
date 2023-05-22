@@ -1,0 +1,23 @@
+.hero {
+  display: grid;
+  grid-template-areas:
+    'top-left'
+    'top-right'
+    'bottom-left'
+    'bottom-right';
+  background-color: var(--primary);
+  height: 100vh;
+}
+
+.front {
+  border-bottom: 0.5px solid var(--secondary);
+  height: calc(100vh - 5rem);
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-areas:
+      'top-left top-left top-left top-right'
+      'bottom-left bottom-left bottom-right bottom-right';
+  }
+}

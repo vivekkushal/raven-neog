@@ -1,5 +1,13 @@
+import Main from '../../components/main/Main';
+import Categories from '../../components/categories/Categories';
+
 function Home() {
-  return <>This is home!</>;
+  return (
+    <>
+      <Main />
+      <Categories />
+    </>
+  );
 }
 
 export default Home;
