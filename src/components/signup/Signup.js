@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Signup() {
   return (
-    <div className="layout">
+    <div className="backdrop">
       <div className="center">
         <h1>Signup</h1>
         <form method="post">
