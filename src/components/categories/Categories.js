@@ -3,10 +3,10 @@ import './Categories.css';
 function Categories() {
   return (
     <main className="hero">
-      <section className="top-left">First</section>
-      <section className="top-right">Second</section>
-      <section className="bottom-left">Third</section>
-      <section className="bottom-right">Fourth</section>
+      <section className="top-left">Landscape</section>
+      <section className="top-right">Portrait</section>
+      <section className="bottom-left">People</section>
+      <section className="bottom-right">Abstract</section>
     </main>
   );
 }
