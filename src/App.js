@@ -1,12 +1,17 @@
 import './App.css';
-// import logo from './logo.png';
 import Mockman from 'mockman-js';
 
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
+import Products from './components/products/Products';
+import SingleProduct from './components/singleProduct/SingleProduct';
+import Cart from './components/cart/Cart';
+import Wishlist from './components/wishlist/Wishlist';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
+import Error from './components/error/Error';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -46,10 +51,16 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:productId" element={<SingleProduct />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/mockman" element={<Mockman />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

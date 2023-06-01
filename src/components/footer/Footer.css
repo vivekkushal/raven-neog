@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  list-style-type: none;
+  height: 20rem;
+  background-color: var(--primary);
+  justify-content: space-around;
+  align-items: end;
+  /* border-top: 0.5px solid var(--secondary); */
+}
+
+li {
+  color: var(--secondary);
+  font-weight: 100;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.name-link {
+  color: var(--secondary);
+}

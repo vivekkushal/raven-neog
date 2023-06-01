@@ -1,15 +1,15 @@
 import './Navbar.css';
 
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
     <nav className="navbar">
       <li>Raven</li>
       <li>
-        <NavLink to="/login" className="login-link">
+        <Link to="/login" className="login-link">
           Login
-        </NavLink>
+        </Link>
       </li>
       <li>Wishlist</li>
       <li>Cart</li>
