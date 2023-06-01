@@ -17,7 +17,11 @@ function Footer() {
           </a>
         </p>
       </li>
-      <li>Cart</li>
+      <li>
+        <i className="fa-brands fa-github"></i>
+        <i className="fa-brands fa-twitter"></i>
+        <i className="fa-brands fa-linkedin"></i>
+      </li>
     </footer>
   );
 }
