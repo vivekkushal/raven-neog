@@ -3,7 +3,7 @@
   list-style-type: none;
   height: 5rem;
   background-color: var(--primary);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 0.5px solid var(--secondary);
 }
@@ -14,12 +14,121 @@ li {
   font-size: 2rem;
 }
 
-.login-link {
+.home-link {
   color: var(--secondary);
   font-weight: 100;
   font-size: 2rem;
   background-color: var(--primary);
-  border: 0.5px solid var(--secondary);
   padding: 5px 20px;
   text-decoration: none;
+}
+
+.inner-search-link,
+.wishlist-link,
+.cart-link,
+.login-link {
+  display: block;
+  color: var(--secondary);
+  font-weight: 100;
+  font-size: 2rem;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.search-link {
+  display: none;
+}
+
+.navbar-toggle {
+  display: block;
+  cursor: pointer;
+}
+
+.navbar-toggle .line {
+  width: 30px;
+  height: 0.5px;
+  margin: 9px 20px;
+  background: var(--secondary);
+}
+
+@media only screen and (min-width: 768px) {
+  .home-link {
+    color: var(--secondary);
+    font-weight: 100;
+    font-size: 2.5rem;
+    background-color: var(--primary);
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+
+  .navbar-links {
+    display: flex;
+  }
+
+  .search-link,
+  .wishlist-link,
+  .cart-link,
+  .login-link {
+    display: block;
+    color: var(--secondary);
+    font-weight: 100;
+    font-size: 1rem;
+    background-color: var(--primary);
+    padding: 5px 20px;
+    text-decoration: none;
+  }
+
+  .search-link {
+    font-size: 1.5rem;
+    margin-right: 10rem;
+  }
+
+  .inner-search-link {
+    display: none;
+  }
+
+  .login-link {
+    border: 0.5px solid var(--secondary);
+    margin-right: 20px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-links.active .inner-search-link,
+  .wishlist-link,
+  .cart-link,
+  .login-link {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-links {
+    height: 0px;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: var(--primary);
+    overflow: hidden;
+  }
+
+  .navbar-links.active {
+    height: 300px;
+  }
+
+  .navbar-links.active .inner-search-link,
+  .wishlist-link,
+  .cart-link,
+  .login-link {
+    opacity: 1;
+  }
+
+  .login-link {
+    border: 0.5px solid var(--secondary);
+    padding: 5px 20px;
+  }
 }
